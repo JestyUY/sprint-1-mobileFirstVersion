@@ -5,4 +5,6 @@ function verificarInput(cardholdername) {
     } else {
       input.classList.remove('border-indigo-700');
     }
-  }
+  };
+  
+  

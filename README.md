@@ -19,3 +19,4 @@
   - Los campos de número de tarjeta, fecha de caducidad o CVC tienen un formato incorrecto.
 - Ver el diseño óptimo en función del tamaño de la pantalla de su dispositivo
 - Rellenar el formulario y ver cómo se actualizan los datos de la tarjeta en tiempo real.(Punto extra)
+## "scripts": {"build": "postcss build ./src/input.css -o ./src/tailwind.css"},
