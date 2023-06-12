@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="tailwind.css">
     
 </head>
-<body class="font-space flex items-center justify-around flex-col  md:flex-row bg-[url('../imágenes/bg-main-mobile.png')] h-screen w-screen bg-no-repeat md:bg-[url('../imágenes/bg-main-desktop.png')] bg-contain ">
+<body class="font-space flex items-center justify-evenly flex-col  md:flex-row bg-[url('../imágenes/bg-main-mobile.png')] h-screen w-screen bg-no-repeat md:bg-[url('../imágenes/bg-main-desktop.png')] bg-contain ">
    
     
      <!-- main section where cards are. -->
@@ -40,7 +40,7 @@
 
 <!-- form -->
 <section class="w-[281px] h-[280px] md:w-[450px] md:h-[450px]  mt-52 md:mt-0 flex justify-center">
-    <form action="" class= "   [&>input]:border-[1px]  [&>input]:border-indigo-700 grid grid-cols-4 grid-rows-7 md:gap-[30px] [&>input]:text-center [&>input]:rounded-lg  [&>label]:mt-auto"  >
+    <form action="" class= "   [&>input]:border-[1px]  [&>input]:border-indigo-700 grid grid-cols-4 grid-rows-7 md:gap-[5px] [&>input]:p-0 [&>input]:text-center [&>input]:rounded-lg  [&>label]:mt-auto"  >
         <label class="col-span-4 font-space  " for="cardholdername">CARDHOLDER NAME</label>
         <input class="col-span-4 " type="text" name="cardholdername" id="cardholdername">
         <label class="col-span-4 "  for="cardnumber">CARD NUMBER</label>
@@ -51,7 +51,7 @@
         <input class="col-span-1" type="text" maxlength="2" minlength="2" pattern="[0-9]+" name="" id="month-input">
         <input class="col-span-1" type="text" maxlength="2" minlength="2" pattern="[0-9]+" name="" id="year-input">
         <input class="col-span-2" type="text" maxlength="3" minlength="3" pattern="[0-9]+" name="" id="cvc-input">
-        <button class="col-span-4 p-2 bg-violet-950 rounded-lg text-white">Submit</button>
+        <button class="col-span-4 p-1 bg-violet-950 rounded-lg text-white mt-4">Submit</button>
 
 
 
