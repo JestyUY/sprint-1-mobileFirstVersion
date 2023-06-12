@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- 
+  "scripts": {"build": "postcss build ./src/input.css -o ./src/tailwind.css"},
   "keywords": [],
   "author": "",
   "license": "ISC",
