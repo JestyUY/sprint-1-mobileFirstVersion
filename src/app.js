@@ -1,10 +1,19 @@
-function verificarInput(cardholdername) {
-    var input = document.getElementById(cardholdername);
-    if (input.value === '') {
-      input.classList.add('border-[1px]');
-    } else {
-      input.classList.remove('border-indigo-700');
-    }
-  };
-  
-  
+let nombreTarjeta = document.getElementById('cardholdername');
+let nombreDisplay = document.getElementById('nombreDisplay');
+
+
+nombreTarjeta.addEventListener("input", () =>{
+  const inputValue = nombreTarjeta.value;
+  nombreDisplay.innerText = inputValue
+})
+
+
+
+
+let cardNumberInp = document.getElementById('cardnumber')
+let cardNumberDisp = document.getElementById('cardNumberDisp')
+
+cardNumberInp.addEventListener("input", () => {
+  const inpValue = cardNumberInp.value;
+  cardNumberDisp.innerText = inpValue;
+})
