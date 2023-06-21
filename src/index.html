@@ -39,7 +39,7 @@
             ></span
           >
           <span class="text-white col-span-3 ml-3" id="nombreDisplay"></span>
-          <span class="text-white ml-3">09/02</span>
+          <span class="text-white ml-3" id="expDate"></span>
         </div>
       </section>
 
@@ -49,8 +49,8 @@
         <div
           class="bg-[url(../imágenes/bg-card-back.png)] w-[282px] h-[154px] md:w-[375px] md:h-[205px] rounded-md grid grid-cols-4 grid-rows-3 bg-cover md:left-[150px] md:relative absolute"
         >
-          <span class="text-white ml-3 col-start-4 row-start-2 self-center"
-            >093 </span
+          <span class="text-white ml-3 col-start-4 row-start-2 self-center" id="cvc"
+            ></span
           >
         </div>
       </section>
@@ -73,7 +73,7 @@
           name="cardholdername"
           id="cardholdername"
         />
-        <label class="col-span-4" for="cardnumber">CARD NUMBER</label>
+        <label class="col-span-4 " for="cardnumber">CARD NUMBER</label>
         <input
           class="col-span-4"
           type="text"
@@ -84,7 +84,7 @@
         />
         <label class="col-span-1" id="label-exp" for="">EXP. </label>
         <label class="col-span-1" id="label-date" for="">DATE (MM/YY)</label>
-        <label class="col-span-2" for="cvc" id="cvc">CVC</label>
+        <label class="col-span-2" for="cvc" id="">CVC</label>
         <input
           class="col-span-1"
           type="text"
