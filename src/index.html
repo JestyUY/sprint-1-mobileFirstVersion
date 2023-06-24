@@ -57,7 +57,7 @@
     </main>
 
     <!-- form -->
-    <section
+    <section id="seccionForm"
       class="w-[281px] h-[280px] md:w-[450px] md:h-[400px] mt-52 md:mt-0 flex justify-center"
     >
       <form
@@ -73,7 +73,8 @@
           name="cardholdername"
           id="cardholdername"
         />
-        <label class="col-span-4 " for="cardnumber">CARD NUMBER</label>
+        <span id="warningName" class=" col-span-4 text-red-600 text-sm mb-[-15px] mt-[-5px] text-center  "></span>
+        <label  class="col-span-4 " for="cardnumber">CARD NUMBER</label>
         <input
           class="col-span-4"
           type="text"
@@ -81,9 +82,12 @@
           pattern="[0-9]+"
           name="cardnumber"
           id="cardnumber"
+
         />
-        <label class="col-span-1" id="label-exp" for="">EXP. </label>
-        <label class="col-span-1" id="label-date" for="">DATE (MM/YY)</label>
+        <span id="warningNumber" class=" col-span-4 text-red-600 text-sm mb-[-15px] mt-[-5px] text-center  "></span>
+
+        <label class="col-span-1" id="label-exp" for="">EXP.DATE </label>
+        <label class="col-span-1" id="label-date" for="">(MM/YY)</label>
         <label class="col-span-2" for="cvc" id="">CVC</label>
         <input
           class="col-span-1"
@@ -94,31 +98,50 @@
           name=""
           id="month-input"
         />
+        
         <input
-          class="col-span-1"
-          type="text"
-          maxlength="2"
-          minlength="2"
-          pattern="[0-9]+"
-          name=""
-          id="year-input"
+        class="col-span-1"
+        type="text"
+        maxlength="2"
+        minlength="2"
+        pattern="[0-9]+"
+        name=""
+        id="year-input"
         />
+        
         <input
-          class="col-span-2"
-          type="text"
-          maxlength="3"
-          minlength="3"
-          pattern="[0-9]+"
-          name=""
-          id="cvc-input"
+        class="col-span-2"
+        type="text"
+        maxlength="3"
+        minlength="3"
+        pattern="[0-9]+"
+        name=""
+        id="cvc-input"
         />
-        <a
-          href="thanksyou.html"
-          class="col-span-4 bg-violet-950 rounded-lg text-white text-center p-4 self-center mt-4"
-          >Submit</a
-        >
+        <span id="warningMonth" class=" col-span-1 text-red-600 text-sm mb-[-15px] mt-[-5px] text-center  "></span>
+        <span id="warningYear" class="col-span-1 text-red-600 text-sm mb-[-15px] mt-[-5px] text-center  "></span>
+        <span id="warningCVC" class=" col-span-2 text-red-600 text-sm mb-[-15px] mt-[-5px] text-center  "></span>
+
+
+        <button id="submitButton" type="button" class="col-span-4 bg-violet-950 rounded-lg text-white text-center p-4 self-center mt-4">Submit</button>
+        
       </form>
+
     </section>
+    <!-- seccion de thanks you -->
+    <section id="seccionThanks" class="hidden w-[281px] h-[280px] md:w-[450px] md:h-[300px]  mt-52 md:mt-0  justify-center">
+
+      <div class="grid grid-cols-1 grid-rows-4  place-items-center ">
+          <img class="col-span-1 " src="../imágenes/icon-complete.svg" alt="">
+          <span class="col-span-1 text-3xl text-violet-950">THANK YOU!</span>
+          <span class="col-span-1 text-gray-500 self-start">We've added your card details</span>
+          <button class="bg-violet-950 p-2 w-[300px] rounded-lg text-white col-span-1 self-start">Continue</button>
+  
+  
+      </div>
+   
+  
+  </section>
 
     <script src="app.js"></script>
   </body>
