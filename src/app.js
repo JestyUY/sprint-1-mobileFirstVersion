@@ -108,19 +108,11 @@ yearInp.addEventListener("blur", () => {
    else {warningYear.innerText = ''}
 })
 
-
 const submitButton = document.getElementById('submitButton')
 const thanks = document.getElementById('seccionThanks')
 const form = document.getElementById('seccionForm')
 submitButton.addEventListener('click', () => {
-   thanks.style.display = "flex"
-   form.style.display = "none"})
-// submitButton.addEventListener('blur', ()=>{
-//   const patron
-//   if (cardNumberInp.value.lenght !== 16)
-//   cardNumberInp.style.border = '1px solid red';
-// }  )
-
-
-//need to fix problems with margins turning red and not turning back to normal 
-//after user fix problem
+  if (!/[0-9]/.test(nombreTarjeta.value) && nombreTarjeta !== "" && /[0-9]/.test(cardNumberInp.value) && cardNumberInp.value.length == 16 && /[0-9]/.test(monthInp.value) && monthInp.value.length == 2 && !/[A-Za-z]/.test(yearInp.value) && monthInp.value.length == 2 && !/[A-Za-z]/.test(yearInp.value) && monthInp.value.length == 2) 
+  {thanks.style.display = "flex"
+  form.style.display = "none"}
+   })
