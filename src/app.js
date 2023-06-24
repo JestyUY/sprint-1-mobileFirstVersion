@@ -34,6 +34,7 @@ cardNumberInp.addEventListener('blur', ()=> {
     cardNumberInp.style.border = "2px red solid"
   }
   else {warningNumber.innerText = '';
+        
         }
 })
 
