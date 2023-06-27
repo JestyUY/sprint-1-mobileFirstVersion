@@ -14,6 +14,7 @@ nombreTarjeta.addEventListener("blur", () => {
     nombreTarjeta.style.border = "2px red solid";
   } else {
     warningName.innerText = "";
+    nombreTarjeta.style.border = "1px solid grey";
   }
 });
 //--- Numero card --
